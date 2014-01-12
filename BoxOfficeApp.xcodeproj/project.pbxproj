@@ -14,13 +14,15 @@
 		73CAFBE0187CE42200EE82F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 73CAFBDF187CE42200EE82F9 /* main.m */; };
 		73CAFBE4187CE42200EE82F9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 73CAFBE3187CE42200EE82F9 /* AppDelegate.m */; };
 		73CAFBE7187CE42200EE82F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73CAFBE5187CE42200EE82F9 /* Main.storyboard */; };
-		73CAFBEA187CE42200EE82F9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73CAFBE9187CE42200EE82F9 /* ViewController.m */; };
 		73CAFBEC187CE42200EE82F9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73CAFBEB187CE42200EE82F9 /* Images.xcassets */; };
 		73CAFBF3187CE42200EE82F9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73CAFBF2187CE42200EE82F9 /* XCTest.framework */; };
 		73CAFBF4187CE42200EE82F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73CAFBD3187CE42200EE82F9 /* Foundation.framework */; };
 		73CAFBF5187CE42200EE82F9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73CAFBD7187CE42200EE82F9 /* UIKit.framework */; };
 		73CAFBFD187CE42200EE82F9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 73CAFBFB187CE42200EE82F9 /* InfoPlist.strings */; };
 		73CAFBFF187CE42200EE82F9 /* BoxOfficeAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 73CAFBFE187CE42200EE82F9 /* BoxOfficeAppTests.m */; };
+		73CAFC0A187CE4DC00EE82F9 /* MovieListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73CAFC09187CE4DC00EE82F9 /* MovieListViewController.m */; };
+		73CAFC0D187CE66500EE82F9 /* MovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73CAFC0C187CE66500EE82F9 /* MovieViewController.m */; };
+		73CAFC10187CF0A900EE82F9 /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 73CAFC0F187CF0A900EE82F9 /* Cell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +47,18 @@
 		73CAFBE2187CE42200EE82F9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		73CAFBE3187CE42200EE82F9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		73CAFBE6187CE42200EE82F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		73CAFBE8187CE42200EE82F9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		73CAFBE9187CE42200EE82F9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		73CAFBEB187CE42200EE82F9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		73CAFBF1187CE42200EE82F9 /* BoxOfficeAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoxOfficeAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73CAFBF2187CE42200EE82F9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		73CAFBFA187CE42200EE82F9 /* BoxOfficeAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BoxOfficeAppTests-Info.plist"; sourceTree = "<group>"; };
 		73CAFBFC187CE42200EE82F9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		73CAFBFE187CE42200EE82F9 /* BoxOfficeAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BoxOfficeAppTests.m; sourceTree = "<group>"; };
+		73CAFC08187CE4DC00EE82F9 /* MovieListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieListViewController.h; sourceTree = "<group>"; };
+		73CAFC09187CE4DC00EE82F9 /* MovieListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieListViewController.m; sourceTree = "<group>"; };
+		73CAFC0B187CE66500EE82F9 /* MovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieViewController.h; sourceTree = "<group>"; };
+		73CAFC0C187CE66500EE82F9 /* MovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieViewController.m; sourceTree = "<group>"; };
+		73CAFC0E187CF0A900EE82F9 /* Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cell.h; sourceTree = "<group>"; };
+		73CAFC0F187CF0A900EE82F9 /* Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,10 +121,14 @@
 				73CAFBE2187CE42200EE82F9 /* AppDelegate.h */,
 				73CAFBE3187CE42200EE82F9 /* AppDelegate.m */,
 				73CAFBE5187CE42200EE82F9 /* Main.storyboard */,
-				73CAFBE8187CE42200EE82F9 /* ViewController.h */,
-				73CAFBE9187CE42200EE82F9 /* ViewController.m */,
 				73CAFBEB187CE42200EE82F9 /* Images.xcassets */,
 				73CAFBDA187CE42200EE82F9 /* Supporting Files */,
+				73CAFC08187CE4DC00EE82F9 /* MovieListViewController.h */,
+				73CAFC09187CE4DC00EE82F9 /* MovieListViewController.m */,
+				73CAFC0B187CE66500EE82F9 /* MovieViewController.h */,
+				73CAFC0C187CE66500EE82F9 /* MovieViewController.m */,
+				73CAFC0E187CF0A900EE82F9 /* Cell.h */,
+				73CAFC0F187CF0A900EE82F9 /* Cell.m */,
 			);
 			path = BoxOfficeApp;
 			sourceTree = "<group>";
@@ -249,9 +259,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73CAFBEA187CE42200EE82F9 /* ViewController.m in Sources */,
+				73CAFC10187CF0A900EE82F9 /* Cell.m in Sources */,
 				73CAFBE4187CE42200EE82F9 /* AppDelegate.m in Sources */,
 				73CAFBE0187CE42200EE82F9 /* main.m in Sources */,
+				73CAFC0A187CE4DC00EE82F9 /* MovieListViewController.m in Sources */,
+				73CAFC0D187CE66500EE82F9 /* MovieViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
