@@ -10,4 +10,11 @@
 
 @interface Cell : UITableViewCell
 
+@property (nonatomic, weak) IBOutlet UIImageView *moviePosterImageView;
+@property (nonatomic, weak) IBOutlet UILabel *movieTitleLabel;
+@property (nonatomic, weak) IBOutlet UILabel *movieSummaryLabel;
+@property (nonatomic, weak) IBOutlet UILabel *movieCastLabel;
+
+
+
 @end

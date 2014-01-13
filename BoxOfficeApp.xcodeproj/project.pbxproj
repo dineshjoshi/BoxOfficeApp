@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		730C39551883B9F300892167 /* MovieModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 730C39541883B9F300892167 /* MovieModel.m */; };
 		73CAFBD4187CE42200EE82F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73CAFBD3187CE42200EE82F9 /* Foundation.framework */; };
 		73CAFBD6187CE42200EE82F9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73CAFBD5187CE42200EE82F9 /* CoreGraphics.framework */; };
 		73CAFBD8187CE42200EE82F9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73CAFBD7187CE42200EE82F9 /* UIKit.framework */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		730C39531883B9F300892167 /* MovieModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieModel.h; sourceTree = "<group>"; };
+		730C39541883B9F300892167 /* MovieModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieModel.m; sourceTree = "<group>"; };
 		73CAFBD0187CE42200EE82F9 /* BoxOfficeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoxOfficeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73CAFBD3187CE42200EE82F9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		73CAFBD5187CE42200EE82F9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -129,6 +132,8 @@
 				73CAFC0C187CE66500EE82F9 /* MovieViewController.m */,
 				73CAFC0E187CF0A900EE82F9 /* Cell.h */,
 				73CAFC0F187CF0A900EE82F9 /* Cell.m */,
+				730C39531883B9F300892167 /* MovieModel.h */,
+				730C39541883B9F300892167 /* MovieModel.m */,
 			);
 			path = BoxOfficeApp;
 			sourceTree = "<group>";
@@ -263,6 +268,7 @@
 				73CAFBE4187CE42200EE82F9 /* AppDelegate.m in Sources */,
 				73CAFBE0187CE42200EE82F9 /* main.m in Sources */,
 				73CAFC0A187CE4DC00EE82F9 /* MovieListViewController.m in Sources */,
+				730C39551883B9F300892167 /* MovieModel.m in Sources */,
 				73CAFC0D187CE66500EE82F9 /* MovieViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -472,6 +478,7 @@
 				73CAFC04187CE42200EE82F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		73CAFC05187CE42200EE82F9 /* Build configuration list for PBXNativeTarget "BoxOfficeAppTests" */ = {
 			isa = XCConfigurationList;
@@ -480,6 +487,7 @@
 				73CAFC07187CE42200EE82F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

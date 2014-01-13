@@ -7,9 +7,12 @@
 //
 
 #import "MovieListViewController.h"
+#import "Cell.h"
+#import "MovieModel.h"
 
 @interface MovieListViewController ()
 @property (nonatomic, strong) NSArray *movies;
+@property (nonatomic, strong) NSMutableArray *movieModels;
 
 @end
 
@@ -36,6 +39,13 @@
             id object = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
             
             self.movies = [object valueForKeyPath:@"movies"];
+            
+            // iterate over movies and create movie model objects
+            self.movieModels = [[NSMutableArray alloc] init];
+            for (NSUInteger i=0; i < [self.movies count]; i++) {
+                [self.movieModels addObject:[[MovieModel alloc] initWithDictionary:[self.movies objectAtIndex:i]]];
+            }
+
             [self.tableView reloadData];
             NSLog(@"%@", object);
         }];
@@ -83,9 +93,21 @@
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
+    Cell *movieCell = (Cell *)cell;
+    
+    MovieModel *movie = [self.movieModels objectAtIndex:indexPath.row];
+    
+    NSData* imageData = [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:movie.imgUrl]];
+    UIImage* image = [[UIImage alloc] initWithData:imageData];
+    
+    movieCell.movieTitleLabel.text = movie.title;
+    movieCell.movieCastLabel.text = movie.cast;
+    movieCell.movieSummaryLabel.text = movie.summary;
+    movieCell.moviePosterImageView.image = image;
+    
     // Configure the cell...
-    NSDictionary *movie = [self.movies objectAtIndex:indexPath.row];
-    cell.textLabel.text = [movie objectForKey:@"title"];
-    return cell;
+//    NSDictionary *movie = [self.movies objectAtIndex:indexPath.row];
+//    cell.textLabel.text = [movie objectForKey:@"title"];
+    return movieCell;
 }
 @end
